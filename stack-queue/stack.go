@@ -28,6 +28,10 @@ func createStack() (*Stack) {
 }
 /* */
 
+/*
+push(new-item:item-type)
+Adds an item onto the stack.
+*/
 func (f *Stack) push(newElmt *Element) () {
 	if (f.length == 0){
 		f.top = newElmt
@@ -37,6 +41,12 @@ func (f *Stack) push(newElmt *Element) () {
 	}
 	f.length++
 }
+/* */
+
+/*
+pop()
+Removes the most-recently-pushed item from the stack.
+*/
 
 func (f *Stack) pop() (*Element) {
 	if (f.length == 0){
@@ -48,6 +58,12 @@ func (f *Stack) pop() (*Element) {
 		return temp
 	}
 }
+/* */
+
+/*
+getTop():item-type
+Returns the last item pushed onto the stack.
+*/
 
 func (f *Stack) getTop() (*Element) {
 	if (f.length == 0){
@@ -56,6 +72,12 @@ func (f *Stack) getTop() (*Element) {
 		return f.top
 	}
 }
+/* */
+
+/*
+isEmpty():Boolean
+True if no more items can be popped and there is no top item.
+*/
 
 func (f *Stack) isEmpty() (bool) {
 	if (f.top == nil){
@@ -64,6 +86,7 @@ func (f *Stack) isEmpty() (bool) {
 		return false
 	}
 }
+/* */
 
 func main(){
 	s := createStack()
@@ -79,6 +102,5 @@ func main(){
 	for !s.isEmpty() {
 		e = s.pop()
 		fmt.Println("Popped ",e.body)
-		
 	}
 }
