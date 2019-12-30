@@ -1,0 +1,1 @@
+See `simple.go` in linkedinlist folder. It's similar to deque

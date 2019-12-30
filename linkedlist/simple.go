@@ -61,7 +61,7 @@ func (f *LinkedList) insertLast(newElmt *Element) () {
 }
 /* */
 
-/* Insert after idx N */
+/* Insert after index N */
 func (f * LinkedList) insertAfterIdx(idx int, newElmt *Element) () {
 	if (idx < f.length) {
 		if (idx == f.length - 1){
@@ -125,7 +125,7 @@ func (f * LinkedList) delLast() (*Element) {
 }
 /* */
 
-/* Delete idx N */
+/* Delete index N */
 func (f * LinkedList) delIdx(idx int) (*Element){
 	// will return deleted element
 	if (f.length == 0){
@@ -148,7 +148,7 @@ func (f * LinkedList) delIdx(idx int) (*Element){
 }
 /* */
 
-/* Iterate */
+/* Iterate forward with next pointer */
 func (f *LinkedList) printAllElmtForward() () {
 	if (f.length == 0) {
 		fmt.Printf("List empty")
