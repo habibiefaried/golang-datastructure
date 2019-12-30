@@ -2,5 +2,5 @@
 Implementing user-defined datastructure in golang
 
 # Command
-* go test -bench=. (BENCHMARK)
-* go test (ONLY TEST)
+* BENCHMARK: $ go test -bench=. 
+* TESTING: $ go test 
